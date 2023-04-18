@@ -1,0 +1,36 @@
+- class_name: 推荐博客
+  flink_style: flexcard
+  link_list:
+    - name: 安知鱼
+      link: https://anzhiy.cn/
+      avatar: https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anzhiy.cn.jpg
+    - name: Shine
+      link: https://blog.shineyu.cn/
+      avatar: https://s3.bmp.ovh/imgs/2022/11/23/129c19d56d22c637.png
+      descr: 热爱生活点滴，分享时刻精彩。
+      siteshot: https://s3.bmp.ovh/imgs/2022/12/28/fe2452f7c4ff48ee.png
+    - name: 南方嘉木
+      link: https://gavin-chen.top/
+      avatar: https://gavin-chen.top/img/avatar.webp
+      descr: 不畏将来，不念过往。
+      siteshot: https://gavin-chen.top/img/siteshot.webp
+    - name: 张洪Heo
+      link: https://blog.zhheo.com/
+      avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
+      descr: 分享设计与科技生活
+      siteshot: https://bu.dusays.com/2023/03/03/6401bcbf1d33b.webp
+
+- class_name: 小伙伴
+  class_desc: 那些人，那些事
+  flink_style: anzhiyu
+  link_list:
+    - name: 我不是咕咕鸽
+      link: https://blog.laoda.de
+      avatar: https://blog.laoda.de/logo
+      descr: 服务器折腾不完全指南，定期分享一些好玩的东西，不定期记录生活。
+    - name: 清风
+      link: https://limh.cc/
+      avatar: https://limh.cc/img/avatar.webp
+      descr: 人不拼怎知输赢

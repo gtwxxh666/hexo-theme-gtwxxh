@@ -1,0 +1,10 @@
+- class_name: 即刻短文
+  essay_list:
+    - content: 成功加入Acrylic团队，来写文档和写配置项
+      date: 2023/04/06
+      link: https://github.com/hexo-theme-Acrylic
+      image:
+        - https://img.gtwxxh.cn/i/2023/04/06/x4tk2g.webp
+    - content: NEXT版本博客。有概率替换掉blog.gtwxxh.cn
+      date: 2023/04/04
+      link: blog.gtwxxh.cn
