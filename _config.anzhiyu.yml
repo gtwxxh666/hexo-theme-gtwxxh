@@ -340,7 +340,7 @@ waline:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://com.gtwxxh.cn/
+  envId: https:/
   region:
   visitor: false
   option:
