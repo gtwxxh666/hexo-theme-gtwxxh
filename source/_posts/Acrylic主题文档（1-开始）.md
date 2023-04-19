@@ -1,5 +1,6 @@
 ---
 title: Acrylic主题文档（1.开始）
+ai: true
 tags:
   - Acrylic
 categories: 教程

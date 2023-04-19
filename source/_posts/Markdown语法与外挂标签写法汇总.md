@@ -1,5 +1,6 @@
 ---
 title: Markdown语法与外挂标签写法汇总
+ai: true
 description: 汇总Markdown格式以及渲染效果
 mathjax: true
 tags:

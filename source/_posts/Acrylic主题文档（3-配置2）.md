@@ -1,5 +1,6 @@
 ---
 title: Acrylic主题文档（3-再配置）
+ai: true
 description: Acrylic主题使用教程
 tags: Acrylic
 categories: 教程

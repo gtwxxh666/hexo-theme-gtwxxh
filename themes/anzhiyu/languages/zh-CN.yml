@@ -30,7 +30,8 @@ post:
     author: 文章作者
     link: 文章链接
     copyright_notice: 版权声明
-    copyright_content: '采用<a href="%s" target="_blank">%s</a> 许可协议。转载请注明来自 <a href="%s" target="_blank">%s</a>！'
+    copyright_content: '本博客所有文章除特别声明外，均采用
+      <a href="%s" target="_blank">%s</a> 许可协议。转载请注明来自 <a href="%s" target="_blank">%s</a>！'
   recommend: 相关推荐
   edit: 编辑
 
@@ -117,5 +118,7 @@ Snackbar:
   night_to_day: 你已切换为浅色模式
 
 loading: 加载中...
+
+load_more: 加载更多
 
 error404: 页面没有找到

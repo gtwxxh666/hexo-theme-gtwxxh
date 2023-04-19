@@ -226,12 +226,12 @@ reward:
   enable: true
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    - img: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/wechat.png
+    - img: https://img.gtwxxh.cn/i/2023/04/18/weixin.png
       link:
-      text: wechat
-    - img: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/alipay.png
+      text: 微信
+    - img: https://img.gtwxxh.cn/i/2023/04/18/zhifubao.png
       link:
-      text: alipay
+      text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -335,7 +335,9 @@ waline:
   bg: /img/comment_bg.png # waline background
   visitor: false
   option:
-    - placeholder: 今天应该会收到少佐的信叭<br>生活明朗，万物可爱
+    meta: ["nick", "mail", "link"]
+    locale:
+      placeholder: 生活明朗，万物可爱
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
@@ -465,7 +467,7 @@ site_verification:
   - name: google-site-verification
     content: xxx
   - name: baidu-site-verification
-    content: code-xxx
+    content: v9IStwTkUk0Ny07u
   - name: msvalidate.01
     content: xxx
 
@@ -606,7 +608,7 @@ blog_title_font:
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
   enable: true
-  icon: \f0f3 # the unicode value of Font Awesome icon, such as '\3423'
+  icon: \f0c4 # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # the subtitle on homepage (主页subtitle)
@@ -1080,7 +1082,7 @@ CDN:
     # fireworks:
     # click_heart:
     # ClickShowText:
-    # fontawesome:
+    # fontawesome: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
     # aplayer_css:

@@ -1,4 +1,4 @@
-#article-container
+#content-inner
   figure.gallery-group
     position: relative
     float: left
@@ -94,9 +94,46 @@
     overflow: auto
     padding: 0 0 16px
 
-  .fj-gallery
+  .gallery
     margin: 0 0 16px
-    opacity: 0
+    text-align: center
 
-    .img-alt
+    .fj-gallery
+      opacity: 0
+
+      .img-alt
+        display: none
+
+      &.lazyload
+        + button
+          display: inline-block
+
+      .gallery-data
+        opacity 0
+        visibility hidden
+
+    button
       display: none
+      margin-top: 25px
+      padding: 10px
+      width: 9em
+      border-radius: 5px
+      background: var(--btn-bg)
+      color: var(--btn-color)
+      font-weight: bold
+      font-size: 1.1em
+      transition: all .3s
+
+      & > *
+        transition: all .4s
+
+      i
+        opacity: 1
+        font-size: 1.1rem
+
+
+      &:hover
+        background: var(--btn-hover-color)
+
+        i
+          margin-left: 2px

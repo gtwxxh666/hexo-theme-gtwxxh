@@ -36,10 +36,18 @@ hexo.extend.helper.register("get_page_fill_description", function () {
     const contents = headings.map(heading => {
       // 去掉 a 标签及其内容
       const text = heading.replace(/<a[^>]*>.*?<\/a>/g, "");
-      return text.replace(/<\/?[^>]+>/g, "");
+      // 去除特殊符号 &,:,; 等
+      return text.replace(/<\/?[^>]+>|&|:|;|#/g, "");
     });
 
-    description = escapeHTML(stripHTML(description).trim()).replace(/\n/g, " ");
+    // 排除 div.post-ai-description 元素中的内容
+    const excludedDivRegex = /<div[^>]*class="?post-ai-description"?.*?>[\s\S]*?<\/div>/gi;
+    description = description.replace(excludedDivRegex, "");
+
+    description = escapeHTML(stripHTML(description).trim())
+      .replace(/\n/g, " ")
+      .replace(/[^\u4e00-\u9fa5]/gi, "");
+
     return contents.join(", ") + description;
   }
 });

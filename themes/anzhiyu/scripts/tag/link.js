@@ -19,7 +19,7 @@ function link(args) {
   }
 
   return `<div calss='anzhiyu-tag-link'><a class="tag-Link" target="_blank" href="${urlFor(link)}">
-    <div class="tag-link-tips">${isOutside != "yes" ? "引用站外地址，不保证站点的可用性和安全性，注意安全" : "站内地址"}</div>
+    <div class="tag-link-tips">${isOutside != "yes" ? "引用站外地址" : "站内地址"}</div>
     <div class="tag-link-bottom">
         <div class="tag-link-left" style="background-image: url(${imgUrl});"></div>
         <div class="tag-link-right">

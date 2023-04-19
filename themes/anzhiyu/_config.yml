@@ -294,7 +294,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: Twikoo # Valine
+  use: # Twikoo/Waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -333,6 +333,9 @@ waline:
   bg: # waline background
   pageview: false
   option:
+    meta: ["nick", "mail", "link"]
+    locale:
+      placeholder: 生活明朗，万物可爱
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
@@ -595,7 +598,7 @@ display_mode: light
 beautify:
   enable: true
   field: post # site/post
-  title-prefix-icon: '\e64a'
+  title-prefix-icon: '\f0c1'
   title-prefix-icon-color: "#F47466"
 
 # Global font settings
@@ -615,7 +618,7 @@ blog_title_font:
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
   enable: true
-  icon: \e607 # the unicode value of Font Awesome icon, such as '\3423'
+  icon: \f0c4 # the unicode value of Font Awesome icon, such as '\f0c4'
   icon-top:
 
 # the subtitle on homepage (主页subtitle)
@@ -1006,10 +1009,14 @@ greetingBox:
 # 文章顶部ai摘要
 post_head_ai_description:
   enable: true
+  gptName: AnZhiYu
+  mode: local # 默认模式 可选值: tianli/local
+  switchBtn: false # 可以配置是否显示切换按钮 以切换tianli/local
+  btnLink: https://afdian.net/item/886a79d4db6711eda42a52540025c377
   randomNum: 3 # 按钮最大的随机次数，也就是一篇文章最大随机出来几种
   basicWordCount: 1000 # 最低获取字符数, 最小1000, 最大1999
-  key: 04agjyj3QHWs39GRBV5T
-  Referer: https://blog.gtwxxh.cn/
+  key: xxxx
+  Referer: https://xx.xx/
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
