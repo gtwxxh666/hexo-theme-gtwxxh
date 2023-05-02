@@ -165,7 +165,6 @@ body[data-type="about"] #web_bg {
 #about-page .about-statistic {
   min-height: 380px;
   width: 39%;
-  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/23/632d634f8376d.jpg) no-repeat top;
   background-size: cover;
   color: var(--anzhiyu-white);
   overflow: hidden;
@@ -284,6 +283,10 @@ body[data-type="about"] #web_bg {
 .author-content-item .card-content .banner-button-group .banner-button:hover i,
 .author-content-item .card-content .banner-button-group .banner-button:hover svg .author-content-item.personalities {
   background: none !important;
+}
+
+.author-content-item.personalities {
+  width: 59%;
 }
 
 .author-content-item.personalities .image {
@@ -597,6 +600,12 @@ body[data-type="about"] #web_bg {
   left: 0;
 }
 
+@media screen and (max-width: 1025px) {
+  .author-content-item.personalities .image {
+    width: 180px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #gitcalendar {
     display: none;
@@ -637,7 +646,7 @@ body[data-type="about"] #web_bg {
     left: auto;
   }
   .author-content-item.personalities .image {
-    width: 90px;
+    width: 125px;
   }
   .site-card-group > a {
     width: 100% !important;

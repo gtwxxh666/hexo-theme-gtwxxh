@@ -24,7 +24,7 @@ menu:
 nav:
   enable: false
   travelling: false
-  clock: false
+  clock: true
   menu:
     - title: 网页
       item:
@@ -152,7 +152,7 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: both
+  position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
     - /img/default_cover.jpg
@@ -342,7 +342,7 @@ waline:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https:/
+  envId: https://com.gtwxxh.cn/
   region:
   visitor: false
   option:
@@ -397,28 +397,31 @@ crisp:
 
 # Footer Settings
 # --------------------------------------
-footer:
-  owner:
-    enable: true
-    since: 2023
-  custom_text:
-  copyright: false # Copyright of theme and framework
-  runtime:
-    enable: true
-    launch_time: 02/05/2023 00:00:00 # 网站上线时间
-    work_img: https://img.gtwxxh.cn/i/2023/03/20/Gtwxxh2.svg
-    work_description: 距离月入25k也就还差一个大佬带我~
-    offduty_img: https://img.gtwxxh.cn/i/2023/03/20/Gtwxxh1.svg
-    offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
-  # 徽标部分配置项 https://shields.io/
-  # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
-  bdageitem:
-    - link: https://hexo.io/ #徽标指向网站链接
-      shields: https://img.gtwxxh.cn/i/2023/03/20/hexo.svg #徽标API
-      message: 博客框架为Hexo_v5.4.2 #徽标提示语
-    - link: https://beian.miit.gov.cn/
-      shields: https://img.gtwxxh.cn/i/2023/03/20/icp.svg
-      message: 浙ICP备2023001503号
+# footer:
+#   owner:
+#     enable: false
+#     since: 2023
+#   custom_text:
+#   runtime:
+#     enable: false
+#     launch_time: 02/05/2023 00:00:00 # 网站上线时间
+#     work_img: https://img.gtwxxh.cn/i/2023/03/20/Gtwxxh2.svg
+#     work_description: 距离月入25k也就还差一个大佬带我~
+#     offduty_img: https://img.gtwxxh.cn/i/2023/03/20/Gtwxxh1.svg
+#     offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
+#   # 徽标部分配置项 https://shields.io/
+#   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
+#   bdageitem:
+#     # - link: https://hexo.io/ #徽标指向网站链接
+#     #   shields: https://img.gtwxxh.cn/i/2023/03/20/hexo.svg #徽标API
+#     #   message: 博客框架为Hexo_v5.4.2 #徽标提示语
+#     # - link: https://beian.miit.gov.cn/
+#     #   shields: https://img.gtwxxh.cn/i/2023/03/20/icp.svg
+#     #   message: 浙ICP备2023001503号
+#     # - link: https://v6.51.la/
+#     #   shields: https://img.gtwxxh.cn/i/2023/03/20/51la.svg
+#     #   message: 51LA统计支持
+
 
 # Analysis
 # --------------------------------------
@@ -594,16 +597,16 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 17px
+  global-font-size: 16px
   code-font-size:
-  font-family:
-  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  font-family: YSHST
+  code-font-family: consolas, YSHST, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
 blog_title_font:
   font_link:
-  font-family: PingFang SC, 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font-family: YSHST, PingFang SC, 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
@@ -668,8 +671,8 @@ aside:
       text: 了解更多
       link: /about/
   card_announcement:
-    enable: false
-    content: 欢迎来看我的博客鸭~
+    enable: true
+    content: Acrylic主题文档编写中~
   card_weixin:
     enable: false
     face: https://img02.anzhiy.cn/adminuploads/1/2022/09/11/631ddb7c9b250.png
@@ -753,6 +756,10 @@ darkmode:
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
   autoChangeMode: 1
+  start: # 8
+  end: # 22
+
+
 
 # Don't modify the following settings unless you know how they work (非必要请不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -952,8 +959,8 @@ console:
 # 51a统计配置
 LA:
   enable: false
-  ck:
-  LingQueMonitorID:
+  ck: K2Z0zxoYgKjfHycC
+  LingQueMonitorID: K2Z0zxoYgKjfHycC
 
 # 标签卖萌
 diytitle:
@@ -973,7 +980,7 @@ comment_barrage_config:
 
 # 左下角音乐配置项
 nav_music:
-  enable: true
+  enable: false
   console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
   id: 8080340434
   server: netease
@@ -993,6 +1000,7 @@ essay:
 ptool:
   enable: true
   categories: false
+  mode: /wechat/ # 运营模式与责任，不配置不显示
 
 # 欢迎语配置
 greetingBox:
@@ -1017,13 +1025,19 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <script src="https://myhkw.cn/player/js/jquery.min.js" type="text/javascript"></script>
+    - <link data-pjax rel="stylesheet" href="/css/footer.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/fonawsome_Gtwxxh.css"  media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
+    - <link data-pjax rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
+    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    - <script>LA.init({id:"K2Z0zxoYgKjfHycC",ck:"K2Z0zxoYgKjfHycC"})</script>
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
     # - <script async src="https://cdn3.codesign.qq.com/icons/DVbAE95AVD9Plze/latest/iconfont.js"></script>
+    - <script defer src="/js/runtime.js"></script>
     - <script async src="//at.alicdn.com/t/c/font_3985186_cl0ft9zignf.js"></script>
+    - <script src="https://myhkw.cn/api/player/168299815140" id="myhk" key="168299815140" m="1"></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
@@ -1121,3 +1135,42 @@ tag_plugins:
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+
+# hexo-filter-gitcalendar
+# see https://akilar.top/posts/1f9c68c9/
+gitcalendar:
+  enable: false # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  # butterfly挂载容器
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  # volantis挂载容器
+  # layout:
+  #   type: class
+  #   name: l_main
+  #   index: 0
+  # matery挂载容器
+  # layout:
+  #   type: id
+  #   name: indexCard
+  #   index: 0
+  # mengd挂载容器
+  # layout:
+  #   type: class
+  #   name: content
+  #   index: 0
+  user: gtwxxh666 #git用户名
+  apiurl: 'https://github-calendar-api.gtwxxh.cn'
+  minheight:
+    pc: 280px #桌面端最小高度
+    mibile: 0px #移动端最小高度
+  # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
+  # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
+  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
+  color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
+  container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
+  gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
+  gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js

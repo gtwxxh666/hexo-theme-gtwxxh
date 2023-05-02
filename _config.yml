@@ -137,6 +137,9 @@ theme: anzhiyu
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: baidu_url_submitter
+  - type: git
+    repository: https://github.com/gtwxxh666/gtwxxh666.github.io.git
+    branch: main
 
 # Extensions
 plugins:

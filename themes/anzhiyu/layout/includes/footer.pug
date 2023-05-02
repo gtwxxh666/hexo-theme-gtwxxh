@@ -1,22 +1,93 @@
 #footer-wrap
+  #ft
+    .ft-item-1
+      .t-top
+        .t-t-l
+          p.ft-t.t-l-t 公益广告🧬
+          .bg-ad
+            div
+              | 国家反诈中心是国务院打击治理电信网络新型违法犯罪工作部际联席会议合成作战平台，集资源整合、情报研判、侦查指挥为一体，在打击、防范、治理电信网络诈骗等新型违法犯罪中发挥着重要作用。
+        .t-t-r
+          p.ft-t.t-l-t 猜你想看💡
+          ul.ft-links
+            li
+              a(href='/') 随便看看
+              a(href='/categories/教程/') 全部教程
+            li
+              a(href='/link/') 我的朋友
+              a(href='/comments/') 留点什么
+            li
+              a(href='/about/') 关于作者
+              a(href='/archives/') 所有文章
+            li
+              a(href='/categories/') 文章分类
+              a(href='/tags/') 文章标签
+            li
+              a(href='/bangumis/') 我的追番
+              a(href='/posts/1b90.html') Acrylic文档
+            li
+              a(href='/posts/abbe.html') 开源日记
+              a(href='/posts/3eeb.html') 梦开始
+    .ft-item-2
+      p.ft-t 推荐友链⌛
+      .ft-img-group
+        .img-group-item
+          a(href='https://blog.shineyu.cn' title='Shine')
+            img(src='https://s3.bmp.ovh/imgs/2022/11/23/129c19d56d22c637.png' alt='')
+        .img-group-item
+          a(href='https://gavin-chen.top/' title='南方嘉木')
+            img(src='https://gavin-chen.top/img/avatar.webp' alt='')
+        .img-group-item
+          a(href='https://blog.zhheo.com' title='张洪Heo')
+            img(src='https://bu.dusays.com/2022/12/28/63ac2812183aa.png' alt='')
+        .img-group-item
+          a(href='https://butterfly.js.org/' title='Butterfly')
+            img(src='https://butterfly.js.org/img/avatar.png' alt='')
+        .img-group-item
+          a(href='https://dusays.com/' title='杜老师说')
+            img(src='https://cdn.dusays.com/avatar.png' alt='')
+        .img-group-item
+          a(href='https://anzhiy.cn/' title='安知鱼')
+            img(src='https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg' alt='')
+        .img-group-item
+          a(href='https://cloud.tencent.com' title='腾讯云')
+            img(src='https://cdn.staticaly.com/gh/gtwxxh666/pic@main/202305020940295.png' alt='')
+        .img-group-item
+          a(href='https://blog.laoda.de' title='我不是咕咕鸽')
+            img(src='https://blog.laoda.de/logo' alt='')
+
   if theme.footer.owner.enable
     - var now = new Date()
     - var nowYear = now.getFullYear()
     if theme.footer.owner.since && theme.footer.owner.since != nowYear
-      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
+      .copyright
+        span!= `<b>&copy;${theme.footer.owner.since} - ${nowYear}</b>`
+        span!= `<b>&nbsp;&nbsp;By ${config.author}</b>`
     else
-      .copyright!= `&copy;${nowYear} By ${config.author}`
-
-  - let work_img = theme.footer.runtime.work_img
-  - let work_description = theme.footer.runtime.work_description
-  if theme.footer.runtime.enable
-    #workboard
-      img(src=`${work_img}`, alt=`${work_description}`, title=`${work_description}`, class="workSituationImg boardsign")
-      #runtimeTextTip
-  if theme.footer.bdageitem
-    p#ghbdages
-      each item in theme.footer.bdageitem
-        a.github-badge(target='_blank' href=item.link style='margin-inline:5px' data-title=item.message title=item.message)
-          img(src=item.shields alt=item.message)
+       .copyright
+         span!= `<b>&copy;${nowYear}</b>`
+         span!= `<b>&nbsp;&nbsp;By ${config.author}</b>`
+  if theme.footer.copyright
+    .framework-info
+      span= _p('footer.framework') + ' '
+      a(href='https://hexo.io')= 'Hexo'
+      span.footer-separator |
+      span= _p('footer.theme') + ' '
+      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
+    
+  #workboard
+  
+  p#ghbdages
+    a.github-badge(target='_blank' href="https://hexo.io/" style='margin-inline:5px' title="博客框架为Hexo")
+      img(src="https://img.gtwxxh.cn/i/2023/03/20/hexo.svg" alt='')
+
+    a.github-badge(target='_blank' href="https://github.com/" style='margin-inline:5px' title="本站采用Github")
+      img(src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt='')
+
+    a.github-badge(target='_blank' href="https://user.51.la/" style='margin-inline:5px' title="数据分析51la")
+      img(src="https://img.gtwxxh.cn/i/2023/03/20/51la.svg" alt='')
+
+    a.github-badge(target='_blank' href="https://beian.miit.gov.cn/" style='margin-inline:5px' title="浙ICP备2023001503号")
+      img(src="https://img.gtwxxh.cn/i/2023/03/20/icp.svg" alt='')

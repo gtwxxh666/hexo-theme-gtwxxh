@@ -2,7 +2,7 @@
   subtitle: 扣首问路，码梦为生✨
   avatarImg: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/user.JPG
   name: Gtwxxh
-  description: 是一名 摆烂鱼
+  description: 是一名 博主
   aboutsiteTips:
     tips: 追求
     title1: 源于
@@ -21,7 +21,7 @@
     title: 无限进步
     item:
       - EDU,软件工程专业
-    img: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png
+    img: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/6330e9bcc39cc.png
   statistic:
     link: /archives
     text: 文章隧道
@@ -33,27 +33,28 @@
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 20XX
-    selfInfoTips2: 不告诉你
+    selfInfoTips2: --
     selfInfoContent2: 软件工程
     selfInfoTips3: 现在职业
-    selfInfoContent3: 不告诉你
+    selfInfoContent3: 学生👨‍🎓
   personalities:
-    author_name: 执政官
-    personality_type: ESFJ-A
-    photo_url: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/c3e8a86b6da718d5.jpg
-    personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
+    author_name: 守卫者
+    personality_type: ISFJ-A / ISFJ-T
+    photo_url: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/7393ba4895e49479495f25c5daa28fce.jpeg
+    personality_img: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/ISFJ_female.png
+    name_url: https://www.16personalities.com/ch/isfj-人格
   maxim:
     maxim_tips: 座右铭
-    maxim_top: 扣首问路，
+    maxim_top: 扣首问路
     maxim_bottom: 码梦为生
   buff:
     buff_tips: 特长
-    buff_top: 宅家
+    buff_top: 脑回路新奇的 酸菜鱼
     buff_bottom: MC指数 MAX
   game:
     game_tips: 爱好游戏
     game_title: Minecraft
-    game_uid: "ID: Gtwxxh"
+    game_uid: "Gtwxxh"
     game_bg: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/c3e8a86b6da718d5.jpg
   comic:
     comic_tips: 爱好番剧
@@ -72,18 +73,16 @@
   like:
     like_tips: 关注偏好
     like_title: 数码科技
-    like_bg: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632f0dd8f33c6.webp
+    like_bg: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/632f0dd8f33c6.webp
     like_bottom: 手机、电脑软硬件
   music:
     music_tips: 音乐偏好
-    music_title: 电音、卡农
+    music_title: 许嵩、民谣、华语流行
     music_bg: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/202303301759940.png
     music_link: #
   reward_list:
     - name: 海阔蓝
       amount: 8.8
       datatime: 2023-03-28
-
-
 
   extra: false

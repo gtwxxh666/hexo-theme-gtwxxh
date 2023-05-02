@@ -1,7 +1,7 @@
 - class_name: 推荐博客
   flink_style: flexcard
   link_list:
-    - name: 安知鱼
+    - name: 安知鱼`Blog
       link: https://anzhiy.cn/
       avatar: https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
       descr: 生活明朗，万物可爱
@@ -21,6 +21,11 @@
       avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
       descr: 分享设计与科技生活
       siteshot: https://bu.dusays.com/2023/03/03/6401bcbf1d33b.webp
+    - name: 杜老师说
+      link: https://dusays.com/
+      avatar: https://cdn.dusays.com/avatar.png
+      descr: 师者，传道，授业，解惑！
+      siteshot: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/202304222038583.png
 
 - class_name: 小伙伴
   class_desc: 那些人，那些事

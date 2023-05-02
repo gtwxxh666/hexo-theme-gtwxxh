@@ -15,6 +15,8 @@ abbrlink: '3791'
 date: 2023-04-17 18:19:03
 ---
 
+{% link Fomalhaut-Markdown语法与外挂标签写法汇总,https://www.fomal.cc/posts/2013454d.html,https://www.fomal.cc/posts/2013454d.html %}
+
 # Markdown语法自带格式
 {% note info flat %}参考：[Markdown语法图文全面详解(10分钟学会)](https://blog.csdn.net/u014061630/article/details/81359144){% endnote %}
 {% note warning flat %}注意：此页面偶尔会存在CSS冲突问题!{% endnote %}
@@ -101,7 +103,7 @@ git push
 <font face="黑体">黑体</font>
 <font color=blue>蓝色</font>
 
-<table><tr><td bgcolor=MistyRose>这里的背景色是：MistyRosen，此处输入任意想输入的内容</td></tr></table>
+<table><tr><td bgcolor=MistyRose>这里的背景色是：MistyRose，此处输入任意想输入的内容</td></tr></table>
 ```
 <!-- endtab -->
 
@@ -2097,6 +2099,46 @@ Any content (support inline tags too).
 
 
 
+## 隐藏块
+
+{% tabs 分栏 %}
+<!-- tab 标签语法 -->
+
+```markdown
+{% hideBlock display,bg,color %}
+content
+{% endhideBlock %}
+```
+<!-- endtab -->
+
+<!-- tab 参数配置 -->
+
+1. content：要隐藏的内容
+2. display：展示前按钮显示的文字（可选）
+3. bg：按钮的背景颜色（可选）
+4. color：按钮显示的文字的颜色（可选）
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+```markdown
+{% hideBlock 点我预览, blue %}
+这里有张图片：
+<img src="https://s1.vika.cn/space/2022/10/30/b35fce448bc9404a8d65c3ce1e6e46eb" alt="image (1)" style="zoom:67%;" />
+{% endhideBlock %}
+```
+<!-- endtab -->
+
+<!-- tab 渲染演示 -->
+{% hideBlock 点我预览, blue %}
+这里有张图片：
+<img src="https://s1.vika.cn/space/2022/10/30/b35fce448bc9404a8d65c3ce1e6e46eb" alt="image (1)" style="zoom:67%;" />
+{% endhideBlock %}
+<!-- endtab -->
+
+{% endtabs %}
+
+
 ## 阿里图标 icon
 
 {% tabs 分栏 %}
@@ -2437,42 +2479,3 @@ Butterfly主题的各个衍生魔改{% referto '[6]','Butterfly 安装文档:标
 
 {% endtabs %}
 
-
-## 隐藏块
-
-{% tabs 分栏 %}
-<!-- tab 标签语法 -->
-
-```markdown
-{% hideBlock display,bg,color %}
-content
-{% endhideBlock %}
-```
-<!-- endtab -->
-
-<!-- tab 参数配置 -->
-
-1. content：要隐藏的内容
-2. display：展示前按钮显示的文字（可选）
-3. bg：按钮的背景颜色（可选）
-4. color：按钮显示的文字的颜色（可选）
-
-<!-- endtab -->
-
-<!-- tab 示例源码 -->
-```markdown
-{% hideBlock 点我预览, blue %}
-这里有张图片：
-<img src="https://s1.vika.cn/space/2022/10/30/b35fce448bc9404a8d65c3ce1e6e46eb" alt="image (1)" style="zoom:67%;" />
-{% endhideBlock %}
-```
-<!-- endtab -->
-
-<!-- tab 渲染演示 -->
-{% hideBlock 点我预览, blue %}
-这里有张图片：
-<img src="https://s1.vika.cn/space/2022/10/30/b35fce448bc9404a8d65c3ce1e6e46eb" alt="image (1)" style="zoom:67%;" />
-{% endhideBlock %}
-<!-- endtab -->
-
-{% endtabs %}
