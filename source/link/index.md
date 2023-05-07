@@ -15,17 +15,7 @@ aside: false
 4. 将我的网站加入友情链接中
 5. 可选：备案
 
-在评论区填写以下内容：
-
-1. 站点名称
-2. 站点链接
-3. 站长头像
-4. 站点描述
-5. 站点截图 
-
-图片推荐使用128x128
-
-站点截图可选
+请点击快速申请 (Butterfly)或者 快速申请 (默认样式) 填写相关信息！
 
 <div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div>
 <link rel="stylesheet" href="/css/kslink.css">

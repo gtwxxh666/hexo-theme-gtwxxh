@@ -2,9 +2,6 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# 双栏文章
-butterfly_article_double_row:
-  enable: true
 
 #设置百度主动推送
 baidu_url_submit:
@@ -184,6 +181,10 @@ aplayer:
   meting: true
   asset_inject: false
 
+# 双栏文章
+butterfly_article_double_row: 
+  enable: true
+
 # 追番插件
 # https://github.com/HCLonely/hexo-bilibili-bangumi
 bangumi: # 追番设置
@@ -216,3 +217,4 @@ cinema: # 追剧设置
   progress:
   extra_options:
     key: value
+

@@ -30,7 +30,7 @@ a .btn-xz{
   max-width: 1200px;
   margin: 0 auto 12px;
   display: flex;
-  color:#292a2a;
+  color:#4b4948;
   text-align: left;
   flex-wrap: wrap;
 }
@@ -38,7 +38,7 @@ a .btn-xz{
   max-width: 1200px;
   margin: 0 auto 12px;
   display: flex;
-  color:#FFFF;
+  color:#b3b3b3;
   text-align: left;
   flex-wrap: wrap;
 }
@@ -130,7 +130,7 @@ a .btn-xz{
   margin-bottom: 20px;
   line-height: 1;
   font-weight: 600;
-  color: #292a2a;
+  color: #111014;
 }
 [data-theme="dark"] .ft-t {
   font-size: 1.1rem;
@@ -142,7 +142,7 @@ a .btn-xz{
 
 .t-l-t {
   padding-left: 14px;
-  color: #292a2a;
+  color: #111014;
 }
 [data-theme="dark"] .t-l-t {
   padding-left: 14px;
@@ -202,14 +202,15 @@ a .btn-xz{
 
 #footer-wrap a {
   border-radius: 30px;
-  color: #292a2a;
+  color: #4b4948;
 }
 [data-theme="dark"] #footer-wrap a {
   border-radius: 30px;
-  color: #FFFF;
+  color: #b3b3b3;
 }
 #footer-wrap {
   padding: 20px 20px;
+  background-color: #f5f7fc;
 }
 
 /* 页脚心跳动画 */

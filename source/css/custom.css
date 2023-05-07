@@ -15,14 +15,14 @@ div#runtime {
   margin: 1rem;
 }
 body {
-  cursor: url(https://blog.shineyu.cn/img/x1.cur), auto;
+  cursor: url(https://img.gtwxxh.cn/i/file/cur/default.cur), default;
 }
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
 a,
 button:not(:disabled) {
-  cursor: url(https://blog.shineyu.cn/img/x2.cur), auto !important;
+  cursor: url(https://img.gtwxxh.cn/i/file/cur/link.cur), default !important;
 }
 #article-container .highlight-tools {
   position: relative;
@@ -72,3 +72,22 @@ button:not(:disabled) {
   /* 定义显示样式 */
   font-display: block;
 }
+*{
+  font-family: "YSHST";
+}
+
+@media screen and (max-width: 768px) {
+  .fish-pond-item {
+      width: 100% !important;}
+  
+  }
+
+.reward-list-item{
+  background-color: #fffcf2;
+}
+
+
+#post-info {
+    text-align: left!important;
+}
+
