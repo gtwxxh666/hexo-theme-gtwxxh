@@ -1,22 +1,16 @@
 /* tags样式 */
 #aside-content .card-tag-cloud a {
-  color: var(--anzhiyu-fontcolor) !important;
-  font-size: 1.05rem !important;
   border-radius: var(--anzhiyu-border-radius);
   display: inline-block;
   margin-right: 4px;
 }
-#aside-content .card-tag-cloud a[href*="/tags/%E5%89%8D%E7%AB%AF/"],
-#aside-content .card-tag-cloud a[href*="/tags/Hexo/"] {
-  color: var(--anzhiyu-lighttext) !important;
-  font-weight: 500;
-}
+
 #aside-content .card-tag-cloud a:hover {
   background: var(--anzhiyu-theme);
   color: var(--anzhiyu-white) !important;
   box-shadow: var(--anzhiyu-shadow-theme);
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1201px) {
   #aside-content .card-tag-cloud a:active {
     transform: scale(0.97);
   }
@@ -68,7 +62,7 @@ li.card-archive-list-item {
   border: 1px solid transparent;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1201px) {
   #content-inner #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover,
   #content-inner #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
     padding-left: 0.5rem;
@@ -117,10 +111,7 @@ li.card-archive-list-item {
 #aside-content .card-info .card-info-social-icons .social-icon:last-child {
   margin-right: 0;
 }
-/* 防止轮播图css未加载完时的超度横行滚动条 */
-.blog-slider {
-  overflow: hidden;
-}
+
 /* 最近文章样式修改 */
 #aside-content .aside-list > .aside-list-item .content > time {
   display: none;
@@ -129,6 +120,10 @@ li.card-archive-list-item {
   -webkit-line-clamp: 3;
   font-weight: 700;
   padding: 2px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 #aside-content .aside-list > .aside-list-item {
   padding: 8px;
@@ -139,7 +134,7 @@ li.card-archive-list-item {
   margin: 6px 0;
   cursor: pointer;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1201px) {
   #aside-content .aside-list > .aside-list-item:hover {
     transform: scale(1.03);
   }
@@ -229,9 +224,6 @@ li.card-archive-list-item {
   border-radius: 12px 0 0 0px;
 }
 
-#aside-content .item-headline {
-  display: none;
-}
 @media screen and (min-width: 900px) {
   #aside-content .sticky_layout {
     top: 70px;

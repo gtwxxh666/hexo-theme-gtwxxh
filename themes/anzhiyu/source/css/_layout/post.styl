@@ -41,9 +41,6 @@ beautify()
       &::marker
         color: var(--pseudo-hover)
 
-  ul > li
-    list-style-type: circle
-
 blockquote {
   border: var(--style-border-always);
   background-color: var(--anzhiyu-secondbg);
@@ -191,6 +188,13 @@ blockquote {
     margin-bottom: 0 !important
 
 #post
+  +maxWidth768()
+    background: var(--anzhiyu-background) !important;
+    border: none;
+  .post_share
+    margin: 8px 0 0
+    width: fit-content
+    min-width 205px
   .tag_share
     display: flex
     align-items: center;
@@ -211,20 +215,22 @@ blockquote {
           display: flex
           align-items: center
           justify-content: center
-          margin: 4px 8px 4px 0
           padding: 4px 12px
           width: fit-content
           border-radius: 8px
           font-size: .85em
           transition: all .2s ease-in-out
-
+          +maxWidth768()
+            margin: 4px 8px 4px 0 !important
+        &__tags
+          margin: 0px 8px 0px 0
+        &__categoryes
+          margin: 0px 8px 4px 0
           &:hover
             background: $light-blue
             color: var(--white)
 
-    .post_share
-      margin: 8px 0 0
-      width: fit-content
+
 
       .social-share
         font-size: .85em
@@ -288,9 +294,14 @@ blockquote {
       box-shadow: 0 0 8px 0 rgba(232, 237, 250, .6), 0 2px 4px 0 rgba(232, 237, 250, .5)
 
     .post-copyright
+      &-title
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       &-meta
         color: $light-blue
         font-weight: bold
+        min-width: 75px;
 
       &-info
         padding-left: 6px
@@ -318,6 +329,8 @@ blockquote {
           flex-direction: row;
           align-items: center;
           justify-content: center;
+          +maxWidth768()
+            display: none
           &:hover
             background: var(--anzhiyu-theme);
             border-color: var(--anzhiyu-theme);

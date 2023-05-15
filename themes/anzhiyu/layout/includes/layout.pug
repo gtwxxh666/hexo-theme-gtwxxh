@@ -8,9 +8,8 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
   head
     include ./head.pug
   body(data-type="anzhiyu")
-    if theme.background
-      #web_bg
-      #an_music_bg
+    #web_bg
+    #an_music_bg
 
     if page.type !== '404'
       #body-wrap(class=pageType)
@@ -39,8 +38,6 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
 
         footer#footer(style=footer_bg)
           !=partial('includes/footer', {}, {cache: true})
-
-        #quit-box(onclick="anzhiyu.removeRewardMask()" style="display: none")
     else
       include ./404.pug
 
@@ -48,6 +45,9 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
       !=partial('includes/loading/index', {}, {cache: true})
 
     !=partial('includes/sidebar', {}, {cache: true})
+
+    if theme.shortcutKey.enable
+      !=partial('includes/shortcutKey', {}, {cache: true})
     include ./rightside.pug
 
     if (theme.nav_music.enable || theme.nav_music.console_widescreen_music)

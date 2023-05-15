@@ -1,7 +1,8 @@
 .post
   +maxWidth768()
     #aside-content
-      background: rgba(255, 255, 255, 0.9);
+      background: var(--anzhiyu-background);
+      border: none;
 #aside-content
   width: 26%
 
@@ -16,7 +17,7 @@
     padding: 20px;
 
   +maxWidth768()
-    margin: -1px;
+    margin-top: -1px;
 
   > .card-widget:first-child
     margin-top: 0
@@ -44,6 +45,7 @@
 
       &__description
         margin-top: -.42em
+        color: var(--anzhiyu-fontcolor);
     
     .banner-button-group .banner-button 
       padding: 20px 12px;
@@ -127,8 +129,12 @@
         padding-left: 10px
 
   .item-headline
-    padding-bottom: 6px
-    font-size: 1.2em
+    padding-bottom: 0;
+    margin-left: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 
     span
       margin-left: 6px
@@ -180,6 +186,8 @@
         flex: 1
         padding-left: 10px
         word-break: break-all
+        width: 4.2em;
+        height: 4.2em;
 
         & > .name
           @extend .limit-more-line
@@ -210,6 +218,8 @@
     margin: 0
     padding: 0
     list-style: none
+  .card-archives .item-headline
+    display: none
 
   .card-archives ul.card-archive-list > .card-archive-list-item,
   .card-categories ul.card-category-list > .card-category-list-item
@@ -260,6 +270,8 @@
             display: none
 
   .card-webinfo
+    .item-headline
+      display: none
     .webinfo
       .webinfo-item
         display: flex
@@ -289,6 +301,7 @@
       transform-origin: right bottom
 
     .toc-percentage
+      display: none
       float: right
       margin-top: -9px
       color: #a9a9a9
@@ -343,7 +356,7 @@
         transition: all .2s ease-in-out
 
         &:hover
-          color: $theme-color
+          color: var(--anzhiyu-lighttext)
 
         &.active
           background: $theme-toc-color
@@ -507,9 +520,10 @@ if hexo-config('aside.enable')
             color: var(--anzhiyu-black);
 
   else if hexo-config('aside.card_author.type') == "1"
+    $card_info_background = hexo-config('aside.card_author.info_background') 
     #aside-content
-      > .card-info
-          background: #fff url(https://img02.anzhiy.cn/adminuploads/1/2022/10/26/6358a07bf21fc.webp) top -24% center no-repeat;
+      > .card-widget.card-info
+          background: #fff url($card_info_background) top -24% center no-repeat;
           position: relative;
           .author-info__name 
             line-height: 1.5em;
@@ -532,3 +546,42 @@ if hexo-config('aside.enable')
             &:hover
               background: var(--anzhiyu-theme-deep);
               color: var(--anzhiyu-white);
+          .card-info-social-icons
+            .social-icon
+              color: var(--anzhiyu-font)
+
+.card-widget .author-info-top
+  margin: 15px auto 0
+  display: flex
+  justify-content: center
+  +maxWidth768()
+    display: none
+
+.card-widget .card-info-avatar
+  display: inline-block
+  position: relative
+
+.card-widget.card-info .banner-button-group
+  margin: 5px 0
+  display: flex
+
+#aside-content .card-info .banner-button
+  height: 40px
+  width: 100%
+  border-radius: 20px
+  justify-content: center
+
+.card-widget.card-info .banner-button-group .banner-button-text
+  margin-right: 5px
+
+.card-info-avatar .avatar-img
+  width: 100px
+  height: 100px
+  display: block
+
+[data-theme="dark"] #aside-content > .card-info
+  background: var(--anzhiyu-card-bg)
+
+@media screen and (max-width: 992px)
+  #aside-content > .card-info
+    background-size: 100% 70%

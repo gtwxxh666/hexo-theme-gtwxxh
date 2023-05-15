@@ -136,6 +136,12 @@ body[data-type="essay"] #web_bg {
 #bber > section > ul > li > div .bber-info-from {
   margin-left: 4px;
 }
+#bber > section > ul > li > div .bber-info-from i {
+  font-size: 0.7rem;
+}
+#bber .bber-item hr::before {
+  display: none;
+}
 
 #bber .bber-bottom {
   display: flex;
@@ -164,6 +170,7 @@ body[data-type="essay"] #web_bg {
 }
 #bber .bber-content-link i {
   margin-right: 3px;
+  font-size: 0.7rem;
 }
 #bber .bber-content-link:hover {
   background-color: var(--anzhiyu-main);
@@ -245,7 +252,7 @@ body[data-type="essay"] #page .author-content-item .card-content .banner-button-
 }
 
 /* 响应式 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   #bber .timeline ul li.bber-item {
     width: 49%;
     margin-right: 1%;
@@ -266,7 +273,7 @@ body[data-type="essay"] #page .author-content-item .card-content .banner-button-
 #bber .aplayer .aplayer-lrc p {
   color: var(--anzhiyu-fontcolor);
   min-height: 40px;
-  line-height: 40px !important;
+  line-height: 30px !important;
   height: 40px !important;
   margin: 0 !important;
 }

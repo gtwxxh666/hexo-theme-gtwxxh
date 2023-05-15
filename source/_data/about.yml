@@ -84,5 +84,8 @@
     - name: Shine
       amount: 2.00
       datatime: 2023-05-02
+    - name: Shine
+      amount: 2.00
+      datatime: 2023-05-02
 
   extra: false

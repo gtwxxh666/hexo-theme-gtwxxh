@@ -1,29 +1,29 @@
 menu:
   本站:
-    隧道: /archives/ || anzhiyu-icon-box-archive
-    分类: /categories/ || anzhiyu-icon-shapes
-    标签: /tags/ || anzhiyu-icon-tags
+    隧道: /archives/ || fa-fw heofont icon-folder-5-fill
+    分类: /categories/ || fa-fw heofont icon-checkbox-multiple-blank-fill
+    标签: /tags/ || fa-fw heofont icon-price-tag-3-fill
 
   朋友:
-    友人帐: /link/ || anzhiyu-icon-link
-    朋友圈: /fcircle/ || fab fa-artstation
-    留言板: /comments/ || anzhiyu-icon-envelope
+    友人帐: /link/ || fa-fw heofont icon-group-fill
+    朋友圈: /fcircle/ || fa-fw heofont icon-rss-fill
+    留言板: /comments/ || fa-fw heofont icon-gift-2-fill
     
   我的:
-    音乐: /music/ || fas fa-music
-    追番: /bangumis/ || fa-brands fa-bilibili fa-lg
-    相册集: /album/ || fas fa-images
+    音乐: /music/ || fa-fw heofont icon-pantone-fill
+    追番: /bangumis/ || fa-fw heofont icon-artboard-fill
+    相册集: /album/ || fa-fw heofont icon-pencil-ruler-2-fill
     
 
   玩具:
-    小空调: /air-conditioner/ || fas fa-fan
-    早报: /news/ || fa-solid fa-newspaper 
-    木鱼: /fish/ || fa-lg fa-solid fa-gear fa-lg
+    小空调: /air-conditioner/ || fa-fw heofont icon-tools-fill
+    早报: /news/ || fa-fw heofont icon-tools-fill
+    木鱼: /fish/ || fa-fw heofont icon-tools-fill
 
   关于:
-    关于本人: /about/ || anzhiyu-icon-paper-plane
-    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
-    随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+    关于本人: /about/ || fa-fw heofont icon-contacts-fill
+    闲言碎语: /essay/ || fa-fw heofont icon-dashboard-fill
+    随便逛逛: javascript:toRandomPost() || fa-fw heofont icon-signal-tower-fill
 
 # 双栏文章
 # article_double_row: true
@@ -32,7 +32,7 @@ menu:
 nav:
   enable: false
   travelling: false
-  clock: true
+  clock: false
   menu:
     - title: 网页
       item:
@@ -173,8 +173,8 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: "无页面"
-  background: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/page-404.png
+  subtitle: "请尝试站内搜索寻找文章"
+  background: https://bu.dusays.com/2023/05/08/645907596997d.gif
 
 post_meta:
   page: # Home Page
@@ -189,7 +189,7 @@ post_meta:
     categories: true # true or false 文章页是否显示分类
     tags: true # true or false 文章页是否显示标籤
     label: true # true or false 显示描述性文字
-
+    rotate: true # true or false 文章顶部图片是否旋转并使用主色调
 # wordcount (字数统计)
 # see https://butterfly.js.org/posts/ceeb73f/#字数统计
 wordcount:
@@ -226,6 +226,7 @@ post_copyright:
   enable: true
   decode: false
   author_href:
+  location: 浙江嘉兴
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -286,7 +287,7 @@ addThis:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
@@ -429,7 +430,65 @@ crisp:
 #     # - link: https://v6.51.la/
 #     #   shields: https://img.gtwxxh.cn/i/2023/03/20/51la.svg
 #     #   message: 51LA统计支持
-
+  #   socialBar:
+  #   enable: false
+  #   centerImg:
+  #   left:
+  #     - title: email
+  #       link: mailto:anzhiyu-c@qq.com
+  #       icon: anzhiyufont anzhiyu-icon-envelope
+  #     - title: 微博
+  #       link: https://weibo.com/u/6378063631
+  #       icon: anzhiyufont anzhiyu-icon-weibo
+  #     - title: facebook
+  #       link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
+  #       icon: anzhiyufont anzhiyu-icon-envelope
+  #   right:
+  #     - title: Github
+  #       link: https://github.com/anzhiyu-c
+  #       icon: anzhiyufont anzhiyu-icon-github
+  #     - title: Bilibili
+  #       link: https://space.bilibili.com/372204786
+  #       icon: anzhiyufont anzhiyu-icon-bilibili
+  #     - title: 抖音
+  #       link: https://v.douyin.com/DwCpMEy/
+  #       icon: anzhiyufont anzhiyu-icon-envelope
+  # list:
+  #   enable: false
+  #   randomFriends: 3
+  #   project:
+  #     - title: 服务
+  #       links:
+  #         - title: 51la统计
+  #           link: https://v6.51.la/
+  #         - title: 十年之约
+  #           link: https://www.foreverblog.cn/
+  #         - title: 开往
+  #           link: https://github.com/travellings-link/travellings
+  #     - title: 主题
+  #       links:
+  #         - title: 文档
+  #           link: /docs/
+  #         - title: 源码
+  #           link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+  #         - title: 更新日志
+  #           link: /update/
+  #     - title: 导航
+  #       links:
+  #         - title: 即刻短文
+  #           link: /essay/
+  #         - title: 友链文章
+  #           link: /fcircle/
+  #         - title: 留言板
+  #           link: /comments/
+  #     - title: 协议
+  #       links:
+  #         - title: 隐私协议
+  #           link: /privacy/
+  #         - title: Cookies
+  #           link: /cookies/
+  #         - title: 版权协议
+  #           link: /copyright/
 
 # Analysis
 # --------------------------------------
@@ -490,7 +549,8 @@ site_verification:
 
 theme_color:
   enable: true
-  #   main: "#3b70fc"
+  main: "#3b70fc"
+  dark_main: "#0084ff"
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
   text_selection: "#3b70fc"
@@ -502,7 +562,7 @@ theme_color:
   toc_color: "#3b70fc"
   #   blockquote_padding_color: "#3b70fc"
   #   blockquote_background_color: "#3b70fc"
-  scrollbar_color: "#3b70fc"
+  scrollbar_color: "var(--anzhiyu-scrollbar)"
   meta_theme_color_light: "#f7f9fe"
   meta_theme_color_dark: "#18171d"
 
@@ -522,7 +582,7 @@ tag_ui: # 留空或 index
 # Website Background (设置网站背景)
 # can set it to color or image (可设置图片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: var(--anzhiyu-background)
+# background: var(--anzhiyu-background)
 
 # Footer Background
 footer_bg: false
@@ -531,7 +591,7 @@ footer_bg: false
 rightside-bottom: 100px
 
 # Enter transitions (开啓网页进入效果)
-enter_transitions: false
+# enter_transitions: false
 
 # Background effects (背景特效)
 # --------------------------------------
@@ -664,15 +724,16 @@ aside:
   hide: false
   button: true
   mobile: true # display on mobile
-  position: right # left or right
+  position: left # left or right
   display:
     archive: true
     tag: true
     category: false
   card_author:
     enable: true
-    type: 2 # 1为使用头像card 2为不适用头像card
-    description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div>
+    type: 1 # 1为使用头像card 2为不适用头像card
+    description: # 默认为站点描述
+    info_background: https://bu.dusays.com/2023/04/23/6444b2b59a295.webp # type为1时有效
     button:
       enable: true
       icon: fas fa-circle-right
@@ -695,10 +756,13 @@ aside:
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
+    highlightTags:
+      - Hexo
+      - 前端
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: true
+    color: false
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
     enable: true
@@ -750,6 +814,12 @@ translate:
   msgToTraditionalChinese: "繁"
   # The text of the button when the language is Traditional Chinese
   msgToSimplifiedChinese: "简"
+  # Right-click menu default text
+  rightMenuMsgDefault: "轉為繁體"
+  # Right-click the menu to traditional Chinese
+  rightMenuMsgToTraditionalChinese: "转为繁体"
+  # Right-click menu to simplified Chinese
+  rightMenuMsgToSimplifiedChinese: "转为简体"
 
 # Read Mode (閲读模式)
 readmode: true
@@ -864,6 +934,7 @@ lazyload:
   field: site # site/post
   placeholder: https://img.gtwxxh.cn/i/2023/04/16/loading.gif
   blur: true
+  progressive: true
 
 
 # PWA
@@ -871,12 +942,14 @@ lazyload:
 # ---------------
 pwa:
   enable: false
+  startup_image_enable: false
   manifest: 
   theme_color: 
   apple_touch_icon: 
+  mask_icon:
+  bookmark_icon:
   favicon_32_32: 
   favicon_16_16: 
-  mask_icon: 
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -885,8 +958,6 @@ Open_Graph_meta: true
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
 
-# envelope_comment
-# see https://akilar.top/posts/e2d3c450/
 # envelope_comment
 # see https://akilar.top/posts/e2d3c450/
 envelope_comment:
@@ -922,17 +993,17 @@ home_top:
       path: /categories/杂项/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
-      icon: fas fa-dove
+      icon: anzhiyu-icon-dove
     - name: 教程
       path: /categories/教程/
       shadow: var(--anzhiyu-shadow-red)
       class: red
-      icon: fas fa-burn
+      icon: anzhiyu-icon-fire
     - name: 生活
       path: /categories/生活日常/
       shadow: var(--anzhiyu-shadow-green)
       class: green
-      icon: fas fa-book
+      icon: anzhiyu-icon-book
   default_descr: 再怎么看我也不知道怎么描述它的啦！
   swiper:
     enable: false
@@ -1003,16 +1074,31 @@ visitorMail:
 essay:
   enable: true
   top_background: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/home_bg.webp
+  title: 即刻短文
+  subTitle: 咸鱼的日常生活。
+  tips: 使用 即刻短文静态部署版 构建
+  button: 关于我
+  buttonLink: /about/
+  limit: 30
 
 # ptool 文章底部工具
 ptool:
   enable: true
   categories: false
   mode: /wechat/ # 运营模式与责任，不配置不显示
+  share_mobile: true
+  share_weibo: true
+  share_copyurl: true
 
 # 欢迎语配置
 greetingBox:
   enable: false
+
+
+# 快捷键配置
+shortcutKey:
+  enable: true
+  delay: 100 # shift按下延时多久开启
 
 # 文章顶部ai摘要
 post_head_ai_description:
@@ -1033,6 +1119,7 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://cdn3.codesign.qq.com/icons/X2bzpZvRWkZkAaV/latest/iconfont.css">
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script>new LingQue.Monitor().init({id:"K3J7KS6bz1pf0xtj"});</script>
     - <link data-pjax rel="stylesheet" href="/css/footer.css" media="defer" onload="this.media='all'">
@@ -1113,6 +1200,7 @@ CDN:
     # aplayer_js:
     # meting_js:
     # prismjs_js:
+    # meting_api:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
     # artalk_js:

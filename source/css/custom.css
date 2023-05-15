@@ -82,12 +82,15 @@ button:not(:disabled) {
   
   }
 
-.reward-list-item{
-  background-color: #fffcf2;
+.author-info__description{
+  color: #121212;
 }
 
+#aside-content .card-widget .card-info-avatar .author-status-box .author-status{
+  height: 23px;
+}
 
-#post-info {
-    text-align: left!important;
+[data-theme="dark"] #aside-content .card-widget .card-info-avatar .author-status-box{
+  background-color: #1c1c1c;
 }
 

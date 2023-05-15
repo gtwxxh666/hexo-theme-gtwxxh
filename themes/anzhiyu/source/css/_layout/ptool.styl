@@ -11,6 +11,8 @@
     text-overflow: ellipsis;
     flex-wrap: wrap;
     margin-bottom: 0.5rem;
+    .rewardLeftButton, .shareRight
+      display: flex
     +maxWidth768()
       margin-top: 1rem;
       justify-content: center;
@@ -22,7 +24,8 @@
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
-    width 100%
+    +maxWidth768()
+      flex-direction: column;
     
 .share-link
   margin-left: 0.5rem;
@@ -91,9 +94,13 @@
         border: var(--style-border-always);
       .reward-dec 
         font-size: 0.6rem;
-      
 
-
-
-
-
+if hexo-config('ptool.enable') == true && !hexo-config('ptool.mode')
+  .post-tools .post-tools-left > div
+    margin: 0
+  .post-tools .post-tools-left
+    width auto
+if hexo-config('ptool.enable') == true && hexo-config('ptool.categories')
+  #post .tag_share
+    margin-bottom: 2rem
+    flex-direction: column;

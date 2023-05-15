@@ -12,13 +12,14 @@ mixin postUI(posts)
         let no_cover = article.cover === false || !theme.cover.index_enable ? 'no-cover' : ''
         const new_post = numberone !== 1 && is_current('/') && (!article.sticky || (article.new && article.sticky))
       -
+      if (theme.post_meta.page.categories && article.categories.data.length > 0)
+        .article-meta__categories__box
+          each item, index in article.categories.data
+            a(href=url_for(item.path)).article-meta__categories #[=item.name]
       if post_cover && theme.cover.index_enable
         .post_cover(class=leftOrRight)
           a(href=url_for(link) title=title)
             img.post_bg(src=url_for(post_cover) onerror=`this.onerror=null;this.src='`+ url_for(theme.error_img.post_page) + `'` alt=title)
-      if (theme.post_meta.page.categories && article.categories.data.length > 0)
-        each item, index in article.categories.data
-          a(href=url_for(item.path)).article-meta__categories #[=item.name]
       .recent-post-info(class=no_cover)
         if new_post
           span.newPost 最新文章
@@ -35,7 +36,7 @@ mixin postUI(posts)
                 i.anzhiyufont.anzhiyu-icon-calendar-alt
                 span.article-meta-label=_p('post.created')
                 time.post-meta-date-created(datetime=date_xml(article.date) title=_p('post.created') + ' ' + full_date(article.date))=date(article.date, config.date_format)
-                span.article-meta-separator |
+                span.article-meta-separator
                 i.anzhiyufont.anzhiyu-icon-history
                 span.article-meta-label=_p('post.updated')
                 time.post-meta-date-updated(datetime=date_xml(article.updated) title=_p('post.updated') + ' ' + full_date(article.updated))=date(article.updated, config.date_format)
@@ -58,7 +59,7 @@ mixin postUI(posts)
           mixin countBlockInIndex
             - needLoadCountJs = true
             span.article-meta
-              span.article-meta-separator |
+              span.article-meta-separator
               i.anzhiyufont.anzhiyu-icon-comments
               if block
                 block

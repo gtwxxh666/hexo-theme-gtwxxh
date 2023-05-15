@@ -7,7 +7,6 @@ script.
   console.log = function () {};
   let now1 = new Date();
   queueMicrotask(() => {
-    console.log(1)
     const Log = function () {
       HoldLog.apply(console, arguments);
     }; //在恢复前输出日志
@@ -16,7 +15,8 @@ script.
     const days = (now1 - grt) / 1000 / 60 / 60 / 24;
     const dnum = Math.floor(days);
     const ascll = [
-      `欢迎旅行者!`,
+      `欢迎使用安知鱼!`,
+      `生活明朗, 万物可爱`,
       `
           
          █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
@@ -30,7 +30,7 @@ script.
       "已上线",
       dnum,
       "天",
-      "©#{since} By Gtwxxh",
+      "©#{since} By 安知鱼",
     ];
     const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
 
@@ -63,7 +63,7 @@ script.
     setTimeout(
       console.warn.bind(
         console,
-        "%c ⚡ Powered by Gtwxxh %c 你正在访问 #{author} 的博客.",
+        "%c ⚡ Powered by 安知鱼 %c 你正在访问 #{author} 的博客.",
         "color:white; background-color:#f0ad4e",
         ""
       )
